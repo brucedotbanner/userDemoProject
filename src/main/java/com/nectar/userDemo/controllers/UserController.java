@@ -43,5 +43,10 @@ public class UserController {
     public String deleteUser(@PathVariable Long id) {
         return userService.deleteUser(id) ? "User deleted" : "User not found";
     }
+    
+    @GetMapping("/{id}")
+    public UserEntity findUser(@PathVariable Long id) {
+        return userService.findUser(id);
+    }
 }
 

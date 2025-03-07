@@ -13,4 +13,6 @@ public interface UserService {
 	UserEntity updateUser(UserDTO userDTO);
 
 	boolean deleteUser(Long id);
+
+	UserEntity findUser(Long id);
 }
