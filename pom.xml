@@ -9,11 +9,11 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.nectar</groupId>
-	<artifactId>userDemo</artifactId>
+	<artifactId>user_project</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>userDemo</name>
-	<description>user crud demo</description>
+	<name>user_docker_project</name>
+	<description>user_docker_project</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -78,39 +78,15 @@
 			</properties>
 		</profile>
 		<profile>
-			<id>nec-aws</id>
-			<properties>
-				<env>nec-aws</env>
-			</properties>
-		</profile>
-		<profile>
-			<id>expo-azure</id>
-			<properties>
-				<env>expo-azure</env>
-			</properties>
-		</profile>
-		<profile>
-			<id>engie</id>
-			<properties>
-				<env>engie</env>
-			</properties>
-		</profile>
-		<profile>
 			<id>nec-ofc-stg</id>
 			<properties>
 				<env>nec-ofc-stg</env>
 			</properties>
 		</profile>
 		<profile>
-			<id>net-aws</id>
+			<id>docker</id>
 			<properties>
-				<env>net-aws</env>
-			</properties>
-		</profile>
-		<profile>
-			<id>emaar</id>
-			<properties>
-				<env>emaar</env>
+				<env>docker</env>
 			</properties>
 		</profile>
 		<profile>

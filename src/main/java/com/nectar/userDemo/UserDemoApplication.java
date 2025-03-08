@@ -10,7 +10,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.nectar.userDemo.beans.UserEntity;
 import com.nectar.userDemo.repository.UserDemoRepository;
-
 @SpringBootApplication
 public class UserDemoApplication implements CommandLineRunner {
 
