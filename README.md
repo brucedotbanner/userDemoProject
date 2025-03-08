@@ -1,39 +1,73 @@
-# Project Setup Guide
 
-## Follow the steps below to set up and run the project on your local machine.
+# User Details Application – Project Overview
 
-### Step 1: Download the Project
+## Overview
+This project provides a collection of REST API endpoints to create, update, delete, and list users.
 
-Download the project as a ZIP file from the repository.
+## Table of Contents
+- [Project Setup](#project-setup)
+  - [Prerequisites](#prerequisites)
+  - [Installation and configuration of project](#installation-and-configuration-of-project)
+  - [Running the Application](#running-the-application)
+  - [Accessing the API](#accessing-the-api)
+  - 
 
-Extract the ZIP file to a desired location on your machine.
 
-### Step 2: Configure Database Credentials
+## Project Setup
 
-Navigate to the application properties file where database credentials are defined.
+### Prerequisites
+Make sure you have the following installed:
+- jdk ( for this program we have used java version 1.8)
+- PostgreSQL
+- tomcat
 
-Update the database credentials as per your local database connection.
 
-#### Step 3: Build the Project
+### Installation and configuration of project
+1. Clone the repository:
+   ```bash
+   https://github.com/ajithnectar/userDemoProject.git
+   ```
+2. Open project folder go to dir : \src\main\resources\docker\application.properties
+3. update following field as per you DB credentials
 
-Open a terminal or command prompt.
+   ```bash
+    spring.datasource.url=jdbc:postgresql://your_ip:5432/your_db
+    spring.datasource.username=your_username
+    spring.datasource.password=your_password
+   ```
 
-Navigate to the project's root directory.
+### Running the Application
+1. Go to root directory and build the project 
+     ```
+     mvn clean install -Dmaven.test.skip=true -P docker
+    ```
+## Accessing the API
+## user endpoints
+#### create user
 
-Run the following command to build the project and create a WAR file:
+```http
+  POST /users
+```
 
-# mvn clean install -Dmaven.test.skip=true -P your-profile
+#### update user
 
-Replace <profile> with the appropriate Maven profile as per your environment.
+```http
+  PUT /users
+```
+#### Get user list
 
-### Step 4: Run the Project
+```http
+  GET /users
+```
 
-Deploy the generated WAR file to your preferred application server.
+## delete user
 
-Start the server and ensure the application runs successfully.
+```http
+  DELETE /users/{id}
+```
 
-### Step 5: Access the Application
+## find user
 
-Open your browser and navigate to the application's URL.
-
-Verify that the setup is complete and the application is running as expecte
+```http
+  GET /users/{id}
+```
