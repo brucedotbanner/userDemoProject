@@ -23,10 +23,6 @@ Make sure you have the following installed:
 
 
 ### Installation and configuration of project
-1. Clone the repository:
-   ```bash
-   https://github.com/ajithnectar/userDemoProject.git
-   ```
 2. Open project folder go to dir : \src\main\resources\docker\application.properties
 3. update following field as per you DB credentials
 
