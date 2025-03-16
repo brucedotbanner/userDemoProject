@@ -7,11 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 import com.nectar.userDemo.beans.UserEntity;
 import com.nectar.userDemo.repository.UserDemoRepository;
 @SpringBootApplication
-public class UserDemoApplication implements CommandLineRunner {
+public class UserDemoApplication extends SpringBootServletInitializer implements CommandLineRunner {
 
 	@Autowired
 	private UserDemoRepository userDemoRepository;
